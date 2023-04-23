@@ -1,0 +1,30 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        height: 735px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__title {
+            padding-top: 238px;
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            max-width: 300px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+    }
+    .nav-game {
+        grid-template-columns: repeat(auto-fill, minmax(343px, 1fr));
+    }   
+}
