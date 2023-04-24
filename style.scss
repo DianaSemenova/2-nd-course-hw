@@ -27,8 +27,10 @@ a {
         font-size: 64px;
         line-height: 78px;
         color: #FFFFFF;
+        max-width: 650px;
     }
     &__text {
+        max-width: 440px;
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
@@ -61,19 +63,18 @@ a {
 .nav-game {
     min-height: 556px;
     background: #000915;
-    //padding-top: 128px;
-    //padding-bottom: 128px;
     padding: 128px 120px;
     display: grid;
     gap: 32px;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(378px, 1fr));
+    //grid-template-columns: repeat(12, 1fr);
     &__item {
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
         padding: 32px;
         &_1 {
-            grid-column: span 4;
+            //grid-column: span 4;
             height: 300px;
             background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/nav_1.jpg);
             background-repeat: no-repeat;
@@ -82,7 +83,7 @@ a {
             border-radius: 16px;
         }
         &_2 {
-            grid-column: span 4;
+            //grid-column: span 4;
             height: 300px;
             background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/nav_2.jpg);
             border-radius: 16px;
@@ -91,7 +92,7 @@ a {
             background-size: cover;
         }
         &_3 {
-            grid-column: span 4;
+            //grid-column: span 4;
             height: 300px;
             background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/nav_3.jpg);
             border-radius: 16px;
@@ -112,3 +113,5 @@ a {
         }
     }
 }
+
+@import 'mobile';

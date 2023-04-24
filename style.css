@@ -31,8 +31,10 @@ a {
   font-size: 64px;
   line-height: 78px;
   color: #FFFFFF;
+  max-width: 650px;
 }
 .header__text {
+  max-width: 440px;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -66,7 +68,7 @@ a {
   padding: 128px 120px;
   display: grid;
   gap: 32px;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(378px, 1fr));
 }
 .nav-game__item {
   display: flex;
@@ -75,7 +77,6 @@ a {
   padding: 32px;
 }
 .nav-game__item_1 {
-  grid-column: span 4;
   height: 300px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/nav_1.jpg);
   background-repeat: no-repeat;
@@ -84,7 +85,6 @@ a {
   border-radius: 16px;
 }
 .nav-game__item_2 {
-  grid-column: span 4;
   height: 300px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/nav_2.jpg);
   border-radius: 16px;
@@ -93,7 +93,6 @@ a {
   background-size: cover;
 }
 .nav-game__item_3 {
-  grid-column: span 4;
   height: 300px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/nav_3.jpg);
   border-radius: 16px;
@@ -111,4 +110,36 @@ a {
 }
 .nav-game__link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    height: 735px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__title {
+    padding-top: 238px;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    max-width: 340px;
+  }
+  .header__text {
+    max-width: 340px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 300px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .nav-game {
+    grid-template-columns: repeat(auto-fill, minmax(343px, 1fr));
+  }
 }/*# sourceMappingURL=style.css.map */
