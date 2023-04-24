@@ -3,15 +3,20 @@ alert (a);
 a = 20;
 alert (a);//1
 
-let yearIphone = 2007;
-alert (`год выпуска первого iPhone = ${yearIphone}`);//2
-let nameJS = 'Брендан Эйх';
-alert (`Создатель языка JavaScript ${nameJS}`);//3
+let yearIphone = "Год выпуска первого iPhone = 2007";
+alert (yearIphone);//2
+let nameJS = "Создатель языка JavaScript = Брендан Эйх";
+alert (nameJS);//3
 
 let c = 10;
 let b = 2;
 
-alert (`сумма = ${c+b} разность = ${c-b} произведение = ${c*b} частное = ${c/b}`);//4
+alert (c+b);
+alert (c-b);
+alert (c*b);
+alert (c/b);
+
+//alert (`сумма = ${c+b} разность = ${c-b} произведение = ${c*b} частное = ${c/b}`);//4
 
 let result = b**5;
 alert (result);//5
@@ -40,7 +45,7 @@ const user = {
 
 user ['city of residence'] = 'Ижевск'; //9.1
 
-user.age = '26'; //9.2
+user.age = 26; //9.2
 
 delete user ['city of residence']; //9.3
 

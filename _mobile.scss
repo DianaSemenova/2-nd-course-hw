@@ -14,8 +14,11 @@
             font-size: 32px;
             line-height: 39px;
             text-align: center;
+            max-width: 340px;
         }
         &__text {
+            max-width: 340px;
+            text-align: center;
             font-size: 14px;
             line-height: 22px;
             max-width: 300px;
