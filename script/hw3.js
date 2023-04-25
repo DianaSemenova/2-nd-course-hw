@@ -21,7 +21,7 @@ alert(+ a + + b);//4
 
 
 
-let monthNumber = Number(prompt('Введите номер месяца в году'))
+let monthNumber = Number(prompt('Введите номер месяца в году'));
 
 switch (monthNumber) {
     case 12:
@@ -53,6 +53,20 @@ switch (monthNumber) {
         break;
 } //5
 
+
+//доп.задание 7
+let EvenOddnumber = Number(prompt('Пожалуйста, введите любое число'));
+
+ if (EvenOddnumber) {
+     if ((EvenOddnumber % 2) === 0) {
+         alert('Число четное');
+     }
+     if ((EvenOddnumber % 2) != 0) {
+         alert('Число нечетное');
+     }
+ } else {
+     alert(EvenOddnumber);
+ }
 
 
 
