@@ -47,7 +47,8 @@ a {
   color: #FFFFFF;
   font-weight: 900;
 }
-.header__button {
+
+.game__button {
   background: #9C0332;
   border-radius: 30px;
   width: 234.06px;
@@ -110,6 +111,35 @@ a {
 }
 .nav-game__link:hover {
   text-decoration: underline;
+}
+
+.game-box {
+  background: #000915;
+  padding-top: 233px;
+  padding-bottom: 233px;
+  display: flex;
+  gap: 135px;
+  justify-content: space-between;
+}
+.game-content__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.game-content__text {
+  padding-bottom: 32px;
+  max-width: 584px;
+}
+
+.game-box__img {
+  background-image: url(img/img_4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 485px;
+  height: 333px;
 }
 
 @media (max-width: 767px) {
