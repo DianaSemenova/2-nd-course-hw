@@ -69,4 +69,26 @@ let EvenOddnumber = Number(prompt('Пожалуйста, введите любо
  }
 
 
+ //доп.задание 8
+// const mediaQuery = window.matchMedia('(min-width: 767px)');
+
+// if (mediaQuery.matches) {
+//   alert('Media Query Matched!')
+// }
+
+// let clientOS = 0;
+// let clientAndroid = 1;
+
+//  if (clientAndroid) {
+//      alert("Установите версию приложения для Android по ссылке");
+//  } else {
+//    alert("Установите версию приложения для iOS по ссылке");
+//  }
+
+
+//  let clientDeviceYear = 2015;
+
+//  if ((clientOS && clientAndroid) || clientDeviceYear
+
+
 
