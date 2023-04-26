@@ -68,6 +68,10 @@ a {
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
+  transition: all 0.3s;
+}
+.game__button:hover {
+  background: #EB443F;
 }
 
 .nav-game {
@@ -77,6 +81,10 @@ a {
   display: grid;
   gap: 32px;
   grid-template-columns: repeat(auto-fill, minmax(378px, 1fr));
+}
+.nav-game :hover {
+  border: 3px solid #44D2FF;
+  border-radius: 16px;
 }
 .nav-game__item {
   display: flex;
@@ -118,6 +126,7 @@ a {
 }
 .nav-game__link:hover {
   text-decoration: underline;
+  border: none;
 }
 
 .game-box {

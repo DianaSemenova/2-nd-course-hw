@@ -74,6 +74,10 @@ a {
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
+    transition: all .3s;
+    &:hover {
+        background: #EB443F;
+    }
 }
 
 .nav-game {
@@ -84,13 +88,23 @@ a {
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(auto-fill, minmax(378px, 1fr));
+    //transition: all .3s;
+    :hover {
+        border: 3px solid #44D2FF;
+        border-radius: 16px;
+    }
+    
 
+    
     //grid-template-columns: repeat(12, 1fr);
     &__item {
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
         padding: 32px;
+        //transition: all .3s;
+              
+        
 
         &_1 {
             //grid-column: span 4;
@@ -100,6 +114,7 @@ a {
             background-position: center;
             background-size: cover;
             border-radius: 16px;
+            
         }
 
         &_2 {
@@ -121,6 +136,7 @@ a {
             background-position: center;
             background-size: cover;
         }
+        
     }
 
     &__link {
@@ -133,6 +149,7 @@ a {
 
         &:hover {
             text-decoration: underline;
+            border: none;
         }
     }
 }
