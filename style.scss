@@ -6,20 +6,33 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background: #000915;
 }
+
 a {
     text-decoration: none;
 }
+
 .center {
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
+
+@media (max-width: 1440px) {
+    .center {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+
 .header {
     height: 1024px;
     background-image: url(img/fon_header.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     &__title {
         padding-top: 217px;
         font-style: normal;
@@ -29,6 +42,7 @@ a {
         color: #FFFFFF;
         max-width: 650px;
     }
+
     &__text {
         max-width: 440px;
         font-style: normal;
@@ -39,9 +53,10 @@ a {
         color: rgb(255, 255, 255, .7);
         padding-top: 32px;
         padding-bottom: 44px;
+
         &--bold {
-            color: #FFFFFF; 
-            font-weight: 900;           
+            color: #FFFFFF;
+            font-weight: 900;
         }
     }
 }
@@ -63,17 +78,20 @@ a {
 
 .nav-game {
     min-height: 556px;
-    background: #000915;
-    padding: 128px 120px;
+    // padding: 128px 120px;
+    padding-top: 128px;
+    padding-bottom: 128px;
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(auto-fill, minmax(378px, 1fr));
+
     //grid-template-columns: repeat(12, 1fr);
     &__item {
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
         padding: 32px;
+
         &_1 {
             //grid-column: span 4;
             height: 300px;
@@ -83,6 +101,7 @@ a {
             background-size: cover;
             border-radius: 16px;
         }
+
         &_2 {
             //grid-column: span 4;
             height: 300px;
@@ -92,6 +111,7 @@ a {
             background-position: center;
             background-size: cover;
         }
+
         &_3 {
             //grid-column: span 4;
             height: 300px;
@@ -102,6 +122,7 @@ a {
             background-size: cover;
         }
     }
+
     &__link {
         font-family: 'Montserrat';
         font-style: normal;
@@ -109,20 +130,23 @@ a {
         font-size: 24px;
         line-height: 32px;
         color: #FFFFFF;
+
         &:hover {
             text-decoration: underline;
         }
     }
 }
+
 .game {
     &-box {
-        background: #000915;
         padding-top: 233px;
         padding-bottom: 233px;
         display: flex;
         gap: 135px;
-        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
     }
+
     &-content {
         &__heading {
             font-style: normal;
@@ -131,6 +155,7 @@ a {
             line-height: 59px;
             color: #FFFFFF;
         }
+
         &__text {
             padding-bottom: 32px;
             max-width: 584px;
@@ -148,8 +173,35 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 485px;
+    width: 480px;
     height: 333px;
+}
+
+@media (max-width: 1438px) {
+    .game-box__img {
+        width: 470px;
+    }
+}
+
+@media (max-width: 1428px) {
+    .game {
+        &-box {
+            display: flex;
+            flex-direction: column;
+            gap: 64px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &-content__text {
+            text-align: center;
+        }
+    }
 }
 
 
