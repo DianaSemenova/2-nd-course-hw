@@ -3,13 +3,14 @@ let result = String(prompt('Введите пароль'));
 result === password ? alert('Пароль введен верно') : alert('Пароль введен неправильно');//1
 
 let c = 0;
-(c > 0 && c < 10) ? console.log('Верно') : console.log('Неверно');//2
+console.log((c > 0 && c < 10) ? 'Верно' : 'Неверно');
+//(c > 0 && c < 10) ? console.log('Верно') : console.log('Неверно');//2
 c = 10;
-(c > 0 && c < 10) ? console.log('Верно') : console.log('Неверно');//2
+console.log((c > 0 && c < 10) ? 'Верно' : 'Неверно');//2
 c = -3;
-(c > 0 && c < 10) ? console.log('Верно') : console.log('Неверно');//2
+console.log((c > 0 && c < 10) ? 'Верно' : 'Неверно');//2
 c = 2;
-(c > 0 && c < 10) ? console.log('Верно') : console.log('Неверно');//2
+console.log((c > 0 && c < 10) ? 'Верно' : 'Неверно');//2
 
 let d = 120;
 let e = 45;
@@ -17,7 +18,7 @@ let e = 45;
 
 let a = '2';
 let b = '3';
-alert(+ a + + b);//4
+alert(Number(a) + Number(b));//4
 
 
 
@@ -55,17 +56,19 @@ switch (monthNumber) {
 
 
 //доп.задание 7
-let EvenOddnumber = Number(prompt('Пожалуйста, введите любое число'));
+let evenOddnumber = Number(prompt('Пожалуйста, введите любое число'));
 
-if (EvenOddnumber) {
-    if ((EvenOddnumber % 2) === 0) {
+if (evenOddnumber) {
+    if ((evenOddnumber % 2) === 0) {
         alert('Число четное');
     }
-    if ((EvenOddnumber % 2) != 0) {
+    if ((evenOddnumber % 2) != 0) {
         alert('Число нечетное');
     }
+} if (evenOddnumber === 0) {
+    alert('Число четное');
 } else {
-    alert(EvenOddnumber);
+    alert(evenOddnumber);
 }
 
 
@@ -77,28 +80,43 @@ if (EvenOddnumber) {
 // }
 
 //if (mediaQuery.matches) {
-    //alert('Media Query Matched!')
+//alert('Media Query Matched!')
 //}
-let clienOS = 0;
-if (clienOS === 0) {
-    confirm('Установите версию приложения для IOS по ссылке');
+let clienOS = Number(prompt('Введите 0 если у вас IOS, введите 1 если у вас android'));
+
+if (clienOS === 1) {
+    confirm("Установите версию приложения для Android по ссылке");
 } else {
-    confirm('Установите версию приложения для Android по ссылке');
+    confirm("Установите версию приложения для iOS по ссылке");
 }
 
 ////доп.задание 9
-let clientDeviceYear = 2015;
-if (clienOS === 0 && clientDeviceYear < 2015) {
-    confirm('Установите облегчённую версию приложения для IOS по ссылке');
-} else if (clienOS === 1 && clientDeviceYear < 2015) {
-    confirm('Установите облегчённую версию приложения для Android по ссылке');
-} else if (clienOS === 0 && clientDeviceYear >= 2015) {
-    confirm('Установите версию приложения для IOS по ссылке');
+// let clientDeviceYear = Number(prompt('Введите год выпуска телефона'));;
+// if (clienOS === 0 && clientDeviceYear < 2015) {
+//     confirm('Установите облегчённую версию приложения для IOS по ссылке');
+// } else if (clienOS === 1 && clientDeviceYear < 2015) {
+//     confirm('Установите облегчённую версию приложения для Android по ссылке');
+// } else if (clienOS === 0 && clientDeviceYear >= 2015) {
+//     confirm('Установите версию приложения для IOS по ссылке');
+// } else if (clienOS === 1 && clientDeviceYear >= 2015) {
+//     confirm('Установите версию приложения для Android по ссылке');
+// } else {
+//     alert(clientDeviceYear);
+// }
+let clientDeviceYear = Number(prompt('Введите год выпуска телефона'));
+
+if (clientDeviceYear) {
+    if (clienOS === 0 && clientDeviceYear < 2015) {
+        confirm('Установите облегчённую версию приложения для IOS по ссылке');
+    } 
+    if (clienOS === 1 && clientDeviceYear < 2015) {
+        confirm('Установите облегчённую версию приложения для Android по ссылке');
+    } 
+    if (clienOS === 0 && clientDeviceYear >= 2015) {
+        confirm('Установите версию приложения для IOS по ссылке');
+    } 
+     if (clienOS === 1 && clientDeviceYear >= 2015) {
+        confirm('Установите версию приложения для Android по ссылке');}
 } else {
-    confirm('Установите версию приложения для Android по ссылке');
+   alert (clientDeviceYear);
 }
-
-
-
-
-
