@@ -77,7 +77,7 @@ if (EvenOddnumber) {
 // }
 
 //if (mediaQuery.matches) {
-    alert('Media Query Matched!')
+    //alert('Media Query Matched!')
 //}
 let clienOS = 0;
 if (clienOS === 0) {
@@ -88,11 +88,11 @@ if (clienOS === 0) {
 
 ////доп.задание 9
 let clientDeviceYear = 2015;
-if (clienOS === 0 && year < 2015) {
+if (clienOS === 0 && clientDeviceYear < 2015) {
     confirm('Установите облегчённую версию приложения для IOS по ссылке');
-} else if (clienOS === 1 && year < 2015) {
+} else if (clienOS === 1 && clientDeviceYear < 2015) {
     confirm('Установите облегчённую версию приложения для Android по ссылке');
-} else if (clienOS === 0 && year >= 2015) {
+} else if (clienOS === 0 && clientDeviceYear >= 2015) {
     confirm('Установите версию приложения для IOS по ссылке');
 } else {
     confirm('Установите версию приложения для Android по ссылке');
