@@ -3,9 +3,9 @@ alert (a);
 a = 20;
 alert (a);//1
 
-let yearIphone = "Год выпуска первого iPhone = 2007";
+let FirstyearIphone = "Год выпуска первого iPhone = 2007";
 alert (yearIphone);//2
-let nameJS = "Создатель языка JavaScript = Брендан Эйх";
+let CreatornameJS = "Создатель языка JavaScript = Брендан Эйх";
 alert (nameJS);//3
 
 let c = 10;

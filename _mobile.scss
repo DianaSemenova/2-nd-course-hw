@@ -29,4 +29,15 @@
     .nav-game {
         grid-template-columns: repeat(auto-fill, minmax(343px, 1fr));
     }   
+
+    .game {
+        &-box {
+            padding-top: 51px;
+            padding-bottom: 85px;
+        }
+        &-box__img {
+            width: 344px;
+            height: 236px;
+        }
+    }
 }
