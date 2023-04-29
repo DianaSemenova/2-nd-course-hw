@@ -1,7 +1,7 @@
 //1
 let i = 1;
 while (i<3) {
-    alert ('Привет!');
+    console.log ('Привет!');
     i++;
 }       
 
@@ -27,7 +27,7 @@ const obj = {
 }
 
 for (const fkey in obj) {
-    console.log (`${fkey} — зарплата ${obj[fkey]} долларов.`);
+    alert (`${fkey} — зарплата ${obj[fkey]} долларов.`);
 }
 
 //5

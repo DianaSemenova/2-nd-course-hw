@@ -59,17 +59,31 @@ switch (monthNumber) {
 let evenOddnumber = Number(prompt('Пожалуйста, введите любое число'));
 
 if (evenOddnumber) {
-    if ((evenOddnumber % 2) === 0) {
+    if (evenOddnumber % 2) {
+        alert('Число нечетное');
+    } else {
         alert('Число четное');
     }
-    if ((evenOddnumber % 2) != 0) {
-        alert('Число нечетное');
-    }
-} if (evenOddnumber === 0) {
+
+} else if (evenOddnumber === 0) {
     alert('Число четное');
-} else {
+}
+else {
     alert(evenOddnumber);
 }
+
+// if (evenOddnumber) {
+//     if ((evenOddnumber % 2) === 0) {
+//         alert('Число четное');
+//     }
+//     if ((evenOddnumber % 2) != 0) {
+//         alert('Число нечетное');
+//     }
+// } if (evenOddnumber === 0) {
+//     alert('Число четное');
+// } else {
+//     alert(evenOddnumber);
+// }
 
 
 //доп.задание 8
@@ -97,15 +111,16 @@ let clientDeviceYear = Number(prompt('Введите год выпуска те�
 if (clientDeviceYear) {
     if (clienOS === 0 && clientDeviceYear < 2015) {
         confirm('Установите облегчённую версию приложения для IOS по ссылке');
-    } 
+    }
     if (clienOS === 1 && clientDeviceYear < 2015) {
         confirm('Установите облегчённую версию приложения для Android по ссылке');
-    } 
+    }
     if (clienOS === 0 && clientDeviceYear >= 2015) {
         confirm('Установите версию приложения для IOS по ссылке');
-    } 
-     if (clienOS === 1 && clientDeviceYear >= 2015) {
-        confirm('Установите версию приложения для Android по ссылке');}
+    }
+    if (clienOS === 1 && clientDeviceYear >= 2015) {
+        confirm('Установите версию приложения для Android по ссылке');
+    }
 } else {
-   alert (clientDeviceYear);
+    alert(clientDeviceYear);
 }
