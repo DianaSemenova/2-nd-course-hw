@@ -32,14 +32,14 @@ for (const fkey in obj) {
 
 //5
 let n=1000;
-num = 0;
-for (n, num = 0; n >= 50; num ++){
+let num = 0;
+for (n, num; n >= 50; num ++){
     n = n/2;
     console.log (n);
 }
 console.log("Количество итераций = " + num);
 
 //6
-for (let dayNumber = 5; dayNumber <= 31; dayNumber += 7) { 
-      console.log(`Сегодня пятница, ${dayNumber}-е число. Необходимо подготовить отчет.`);     
+for (let dayFriday = 5; dayFriday <= 31; dayFriday += 7) { 
+      console.log(`Сегодня пятница, ${dayFriday}-е число. Необходимо подготовить отчет.`);     
   }
