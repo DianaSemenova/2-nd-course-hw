@@ -31,7 +31,9 @@ for (const fkey in obj) {
 }
 
 //5
-for (let n = 1000, num = 0; n >= 50; num ++){
+let n=1000;
+num = 0;
+for (n, num = 0; n >= 50; num ++){
     n = n/2;
     console.log (n);
 }
