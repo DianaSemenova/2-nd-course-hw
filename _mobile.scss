@@ -36,8 +36,14 @@
             padding-bottom: 85px;
         }
         &-box__img {
-            width: 344px;
-            height: 236px;
+            &-1 {
+                width: 344px;
+                height: 236px;
+            }
+            &-2 {
+                width: 344px;
+                height: 231px;
+            }
         }
     }
 }

@@ -14,7 +14,7 @@ console.log((c > 0 && c < 10) ? 'Верно' : 'Неверно');//2
 
 let d = 120;
 let e = 45;
-(d > 100 || e > 100) ? console.log('Верно') : console.log('Неверно');//3
+console.log((d > 100 || e > 100) ? 'Верно' : 'Неверно');//3
 
 let a = '2';
 let b = '3';
@@ -59,17 +59,31 @@ switch (monthNumber) {
 let evenOddnumber = Number(prompt('Пожалуйста, введите любое число'));
 
 if (evenOddnumber) {
-    if ((evenOddnumber % 2) === 0) {
+    if (evenOddnumber % 2) {
+        alert('Число нечетное');
+    } else {
         alert('Число четное');
     }
-    if ((evenOddnumber % 2) != 0) {
-        alert('Число нечетное');
-    }
-} if (evenOddnumber === 0) {
+
+} else if (evenOddnumber === 0) {
     alert('Число четное');
-} else {
+}
+else {
     alert(evenOddnumber);
 }
+
+// if (evenOddnumber) {
+//     if ((evenOddnumber % 2) === 0) {
+//         alert('Число четное');
+//     }
+//     if ((evenOddnumber % 2) != 0) {
+//         alert('Число нечетное');
+//     }
+// } if (evenOddnumber === 0) {
+//     alert('Число четное');
+// } else {
+//     alert(evenOddnumber);
+// }
 
 
 //доп.задание 8
@@ -91,32 +105,22 @@ if (clienOS === 1) {
 }
 
 ////доп.задание 9
-// let clientDeviceYear = Number(prompt('Введите год выпуска телефона'));;
-// if (clienOS === 0 && clientDeviceYear < 2015) {
-//     confirm('Установите облегчённую версию приложения для IOS по ссылке');
-// } else if (clienOS === 1 && clientDeviceYear < 2015) {
-//     confirm('Установите облегчённую версию приложения для Android по ссылке');
-// } else if (clienOS === 0 && clientDeviceYear >= 2015) {
-//     confirm('Установите версию приложения для IOS по ссылке');
-// } else if (clienOS === 1 && clientDeviceYear >= 2015) {
-//     confirm('Установите версию приложения для Android по ссылке');
-// } else {
-//     alert(clientDeviceYear);
-// }
+
 let clientDeviceYear = Number(prompt('Введите год выпуска телефона'));
 
 if (clientDeviceYear) {
     if (clienOS === 0 && clientDeviceYear < 2015) {
         confirm('Установите облегчённую версию приложения для IOS по ссылке');
-    } 
+    }
     if (clienOS === 1 && clientDeviceYear < 2015) {
         confirm('Установите облегчённую версию приложения для Android по ссылке');
-    } 
+    }
     if (clienOS === 0 && clientDeviceYear >= 2015) {
         confirm('Установите версию приложения для IOS по ссылке');
-    } 
-     if (clienOS === 1 && clientDeviceYear >= 2015) {
-        confirm('Установите версию приложения для Android по ссылке');}
+    }
+    if (clienOS === 1 && clientDeviceYear >= 2015) {
+        confirm('Установите версию приложения для Android по ссылке');
+    }
 } else {
-   alert (clientDeviceYear);
+    alert(clientDeviceYear);
 }
