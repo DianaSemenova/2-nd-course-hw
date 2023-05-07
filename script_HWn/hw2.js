@@ -3,10 +3,10 @@ alert (a);
 a = 20;
 alert (a);//1
 
-let FirstyearIphone = "Год выпуска первого iPhone = 2007";
-alert (yearIphone);//2
-let CreatornameJS = "Создатель языка JavaScript = Брендан Эйх";
-alert (nameJS);//3
+const firstYearIphone = 2007;
+alert (`Год выпуска первого iPhone = ${firstyearIphone}`);//2
+const creatorNameJS = 'Брендан Эйх';
+alert (`Создатель языка JavaScript = ${creatornameJS}`);//3
 
 let c = 10;
 let b = 2;

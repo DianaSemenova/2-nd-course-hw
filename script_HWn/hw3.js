@@ -58,44 +58,34 @@ switch (monthNumber) {
 //доп.задание 7
 let evenOddnumber = Number(prompt('Пожалуйста, введите любое число'));
 
-if (evenOddnumber) {
+if (!isNaN(evenOddnumber)) {
     if (evenOddnumber % 2) {
         alert('Число нечетное');
     } else {
         alert('Число четное');
     }
 
-} else if (evenOddnumber === 0) {
-    alert('Число четное');
-}
-else {
-    alert(evenOddnumber);
+} else {
+    alert('Вы ввели не числовое значение');
 }
 
+//Второй вариант
 // if (evenOddnumber) {
-//     if ((evenOddnumber % 2) === 0) {
+//     if (evenOddnumber % 2) {
+//         alert('Число нечетное');
+//     } else {
 //         alert('Число четное');
 //     }
-//     if ((evenOddnumber % 2) != 0) {
-//         alert('Число нечетное');
-//     }
-// } if (evenOddnumber === 0) {
+
+// } else if (evenOddnumber === 0) {
 //     alert('Число четное');
-// } else {
+// }
+// else {
 //     alert(evenOddnumber);
 // }
 
 
 //доп.задание 8
-// const mediaQuery = window.matchMedia('(min-width: 767px)');
-
-// if (mediaQuery.matches) {
-//   alert('Media Query Matched!')
-// }
-
-//if (mediaQuery.matches) {
-//alert('Media Query Matched!')
-//}
 let clienOS = Number(prompt('Введите 0 если у вас IOS, введите 1 если у вас android'));
 
 if (clienOS === 1) {
