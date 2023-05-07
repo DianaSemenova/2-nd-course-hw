@@ -55,7 +55,9 @@ function askUser(ageUser) {
         alert ('Вы ввели неправильное значение');
     } else if (ageUser > 12) {
         alert ('Добро пожаловать!'); 
-    } else alert ('Привет, друг!'); 
+    } else {
+        alert ('Привет, друг!');
+    }  
 }
 
 askUser (Number(prompt('Сколько вам лет?')));
