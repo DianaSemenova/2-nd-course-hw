@@ -89,6 +89,37 @@ for (let arrayNumberIn of arrayNumber) {
 // Следующий элемент массива можно получить с помощью индекса:  i + 1. 
 // Обратите внимание, что у последнего элемента нет следующего.
 
+let arbitraryNumbers = [1, 3, 5, 7, 9];
+
+for (let i = 0; i < arbitraryNumbers.length - 1; i++) {
+    let resultSum = arbitraryNumbers[i] + arbitraryNumbers[i + 1];
+    console.log(resultSum);
+}
 
 
+//11-Создайте функцию, которая принимает на вход массив целых чисел, а возвращает массив квадратов этих чисел.
+
+function squareArr(...arbitraryNumbers) {
+    return arbitraryNumbers.map(number => number ** 2);
+}
+
+console.log(squareArr(...arbitraryNumbers));
+
+//12-Создайте функцию, которая принимает на вход массив строк, а возвращает массив длинны слов.
+
+let getLengthWords = (...words) => {
+    return words.map(number => number.length);
+}
+
+console.log(getLengthWords('массив', '', 'стр', 'Массив - упорядоченный набор элементов', 'д'));
+
+// 13-Создайте функцию, которая принимает на вход массив целых чисел, 
+// а возвращает массив содержащий только отрицательные значения.
+
+
+let getMinusNumbers = (...arrayNumbers) => {
+    return arrayNumbers.filter((el) => el < 0);
+}
+
+console.log(getMinusNumbers(1, -1, 2, -2, 3, -3));
 
