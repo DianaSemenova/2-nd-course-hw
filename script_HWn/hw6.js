@@ -123,3 +123,42 @@ let getMinusNumbers = (...arrayNumbers) => {
 
 console.log(getMinusNumbers(1, -1, 2, -2, 3, -3));
 
+// 14-Создайте массив, состоящий из 10 значений. Значения массива необходимо сгенерировать с помощью метода 
+// Math.random() в диапазоне от 0 до 10.
+// В данном массиве найдите все четные значения и добавьте их в новый массив. 
+// Результат работы программы необходимо вывести в консоль — это будет два массива: 
+// исходный массив и массив с четными значениями.
+// const generateArray = (length, max) => (
+//     [...new Array(length)]
+//         .map(() => Math.round(Math.random() * max))
+// );
+// console.log(generateArray(8, 100));
+
+let arrayRound1 = [];
+for (let i = 0; i < 10; i++) {
+    arrayRound1.push(Math.round(Math.random() * 10));
+};
+console.log(arrayRound1);
+
+function getEvenNumber() {
+    return arrayRound1.filter((el) => el % 2 == 0);
+};
+console.log(getEvenNumber());
+
+
+// 15-Создайте массив, состоящий из 6 элементов. Элементы массива необходимо сгенерировать с помощью 
+// Math.random() в диапазоне от 1 до 10.
+// Требуется найти среднее арифметическое этих цифр, результат программы вывести в консоль.
+// Для получения среднего арифметического необходимо все значения массива сложить и разделить 
+// на количество элементов в массиве.
+
+let arrayRound2 = [];
+for (let i = 0; i < 6; i++) {
+    arrayRound2.push(Math.round(Math.random() * 10));
+};
+console.log(arrayRound2);
+
+
+const arithmeticMean = (arrayRound2.reduce((a, b) => (a + b))) / (arrayRound2.length);
+console.log (arithmeticMean.toFixed(2));
+
