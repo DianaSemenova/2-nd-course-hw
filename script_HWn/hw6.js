@@ -78,11 +78,7 @@ const arrayNumber = [
     [4, 5, 6]
 ];
 
-for (let arrayNumberIn of arrayNumber) {
-    for (let element of arrayNumberIn) {
-        console.log(element);
-    }
-}
+console.log(arrayNumber.flat());
 
 // 10-Создайте массив с произвольными числами (диапазон от 1 до 10). Переберите его с помощью цикла  for
 // и в каждой итерации выведите в консоль сумму текущего и следующего элементов массива. 
