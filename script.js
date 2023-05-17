@@ -27,8 +27,8 @@ function calcTimeYear(monthNumber) {
 
 function memorizeWords() {
 
-    let fruitsArray = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-    fruitsArraySort = fruitsArray.sort(() => Math.random() - 0.5);
+    const fruitsArray = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    let fruitsArraySort = fruitsArray.sort(() => Math.random() - 0.5);
     alert(fruitsArraySort);
 
     let indexWords = fruitsArraySort.length - 1;
