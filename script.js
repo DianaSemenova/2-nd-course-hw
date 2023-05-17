@@ -16,3 +16,39 @@ function calcTimeYear(monthNumber) {
     }
 }
 
+//задание 7.11
+// Необходимо перемешать элементы массива и вывести на экран пользователю с использованием alert();
+// Спросить у пользователя:
+// Чему равнялся первый элемент массива?
+// Чему равнялся последний элемент массива?
+// Поздравить пользователя, если он угадал оба элемента.
+// Если пользователь угадал только одно слово, сообщить: «Вы были близки к победе!»
+// Если не угадал ни одного элемента, сообщить, что пользователь ответил неверно.
+
+function memorizeWords() {
+
+    let fruitsArray = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    fruitsArraySort = fruitsArray.sort(() => Math.random() - 0.5);
+    alert(fruitsArraySort);
+
+    let indexWords = fruitsArraySort.length - 1;
+
+    let userAnswerFirstEl = prompt('Чему равнялся первый элемент массива?');
+    let userAnswerLastEl = prompt('Чему равнялся последний элемент массива?');
+
+    if (userAnswerFirstEl.toLowerCase() === fruitsArraySort[0].toLowerCase() && 
+    userAnswerLastEl.toLowerCase() === fruitsArraySort[indexWords].toLowerCase()) {
+
+        alert('Поздравляем, Вы угадали оба элемента!');
+
+    } else if (userAnswerFirstEl.toLowerCase() === fruitsArraySort[0].toLowerCase() || 
+    userAnswerLastEl.toLowerCase() === fruitsArraySort[indexWords].toLowerCase()) {
+
+        alert ('Вы были близки к победе!');
+
+    } else {
+        alert ('К сожалению, вы ответили неверно.')
+    }
+
+}
+
