@@ -67,3 +67,30 @@ let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()]
     " Врем: " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
 
 console.log(fullDate);
+
+// 6-Напишите функцию, которая будет принимать на вход целое число, 
+// а возвращать массив случайных целых чисел от 0 до переданного числа. 
+// Длина массива должна быть в 2 раза меньше переданного числа.
+
+getRandomArrNumbers(7); // [6, 2, 7] - массив заполнен случайными числами
+// от 0 до 7, длина массива 7 / 2 = 3.5, округляем до ближайшего меньшего
+// числа, получаем 3
+getRandomArrNumbers(12); // [9, 11, 10, 9, 3, 0] - массив заполнен случайными числами
+// от 0 до 12, длина массива 12 / 2 = 6
+
+function getRandomArrNumbers(number) {
+
+    const arrayRound = [];
+
+    let lengthNumber = Math.round((number / 2));
+
+    for (let i = 0; i < lengthNumber; i++) {
+        arrayRound.push(Math.round(Math.random() * number));
+    };
+    
+    console.log (arrayRound);
+}
+
+getRandomArrNumbers(12);
+getRandomArrNumbers(20);
+getRandomArrNumbers(7);
