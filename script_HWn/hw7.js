@@ -33,8 +33,37 @@ function getRandomInt(minValue, maxValue) {
     return Math.round(Math.random() * (maxValue - minValue)) + minValue
 
 }
-console.log(getRandomInt(0, 10));
+console.log(getRandomInt(1, 10));
 
 //7-Напишите функцию, которая на вход принимает 2 целых числа, 
 //а в качестве результата возвращает случайное целое число в этом диапазоне.
 console.log(getRandomInt(20, 100));
+
+
+//8-Выведите в консоль текущую дату в стандартном режиме. Используйте один из трех рассмотренных в уроке способов.
+let currentDate = new Date();
+console.log(currentDate);
+
+// 9-Создайте переменную currentDate и сохраните в нее текущую дату. 
+// Выведите дату, которая наступит через 73 дня после текущей.
+
+currentDate.setDate(currentDate.getDate() + 73);
+console.log(currentDate);
+
+//10-Написать функцию, которая на вход принимает дату, а возвращает ее отображение в виде:
+// Дата: <число> <месяц на русском> <год> - это <день недели на русском>.
+// Время: <часы>:<минуты>:<секунды>
+// Время, которое будет выведено, также хранится в объекте Date.
+
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+    "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+let myDate = new Date();
+
+let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() +
+    " - это " + days[myDate.getDay()] +
+    " Врем: " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
+
+console.log(fullDate);
