@@ -16,13 +16,28 @@ console.log(people.sort(sortAscending));
 // будет выводить в консоль текущую дату. Последней строкой должно выводиться сообщение «30 секунд прошло».
 
 
-let stopInterval = setInterval(() => {
-    let currentDate = new Date();
-    console.log(currentDate);
-}, 1000 * 3);
+// let stopInterval = setInterval(() => {
+//     let currentDate = new Date();
+//     console.log(currentDate);
+// }, 1000 * 3);
 
-setTimeout(() => {
-    clearInterval(stopInterval);
-    console.log('30 секунд прошло');
-}, 1000 * 30);
+// setTimeout(() => {
+//     clearInterval(stopInterval);
+//     console.log('30 секунд прошло');
+// }, 1000 * 30);
+
+function getCurrentDate(time, timeStop) {
+    let currentDateInterval = setInterval(() => {
+        let currentDate = new Date();
+        console.log(currentDate);
+    }, time);
+
+    let stopInterval = setTimeout(() => {
+        clearInterval(currentDateInterval);
+        console.log('30 секунд прошло');
+    }, timeStop);
+
+}
+
+getCurrentDate(3000, 30000);
 
