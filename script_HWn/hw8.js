@@ -101,7 +101,17 @@ function isMale(word) {
     return word.gender === 'male';
 }
 function filter(arr, ruleFunction) {
-    let arrayNew = arr.filter(el => ruleFunction(el))
+    //let arrayNew = arr.filter(el => ruleFunction(el)
+
+    const arrayNew = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (ruleFunction(arr[i])) {
+            arrayNew.push(arr[i]);
+        }
+    }
+
+
     return arrayNew;
 
 }
